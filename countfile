@@ -1,0 +1,4 @@
+//To count how many file in a folder
+//
+// Need to use with ls to list the folder and then count the line
+ls | wc -l

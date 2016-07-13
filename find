@@ -1,0 +1,5 @@
+//To find specific filename  and store it to a file for reference
+//
+//The result can be used to rsync with remote server
+
+find . -name "*data123*" > result.log

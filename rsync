@@ -1,0 +1,10 @@
+//Rsync command to sync specific filename from local to remote server
+// 
+//This rsync is with DRY command to check . Remove "n" to perform actual task.
+//
+// rsync -avn --files-from={to rsync contents from  files} {source folder/file}  {root@your-remote-server.com:{destination location}
+
+
+
+rsync -avn --files-from=/home/foo/bar.log /home/sourcedata/folder1  root@myserver.com:/home/data/folder1
+
