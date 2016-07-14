@@ -1,0 +1,16 @@
+// Crontab command
+//
+// Execute crontab -e to open the crontab file | Execute crontab -l to list the cron job
+//
+//
+//syntax - 1 2 3 4 5 /root/backup.sh       
+// 
+//Where 1: Minute (0-59)
+//      2: Hours ( 0-23)
+//      3: Day (0-31)
+//      4: Month (0-12)
+//      5: Day of the week (0-7 [ 7 or 0 == sunday])
+
+crontab -e
+
+ * 2 * * * sh /home/foo/foobar.sh
