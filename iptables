@@ -1,0 +1,24 @@
+#How to see what iptables list
+
+iptables -L
+
+#Where does iptables is saved
+
+/etc/iptables/rules.v4    (for ipv4)
+/etc/iptables/rules.v6    (for ipv6)
+
+#How to save current iptables
+
+iptables-save > /etc/iptables/rules.v4
+
+#How to restore the iptables from file
+##Overwrite the current rules
+iptables-restore < /etc/iptables/rules.v4
+
+##Add the new rules keeping the current ones
+iptables-restore -n < /etc/iptables/rules.v4
+
+
+##Automated the above process which takes over the loading of the saved rules by installing additional package
+
+apt-get install iptables-persistent
