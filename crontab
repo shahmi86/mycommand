@@ -14,3 +14,6 @@
 crontab -e
 
  * 2 * * * sh /home/foo/foobar.sh
+
+
+//When a bash file perform source from other file to get the variables , it won't work when using cron*
